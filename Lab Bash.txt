@@ -1,0 +1,264 @@
+Setup
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~
+$ mkdir IH-Labs
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+ Dropbox/
+'Entorno de red'@
+ Favorites/
+ IH-Labs/
+ Impresoras@
+ IntelGraphicsProfiles/
+ Jedi/
+ Links/
+'Menú Inicio'@
+'Mi unidad (lgmessia@gmail.com)'/
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ Nextcloud/
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Postman/
+ PycharmProjects/
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Tracing/
+ Untitled.ipynb
+ Videos/
+ anaconda3/
+ figuras_variadas.png
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ repo/
+ venv/
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~
+$ cd IH-Labs
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs
+$ ls
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs
+$ git clone https://github.com/laiagomezmessia/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Total 40 (delta 0), reused 0 (delta 0), pack-reused 40
+Receiving objects: 100% (40/40), 12.63 KiB | 1.58 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs
+$ ls
+lab-bash/
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs
+$ cd lab-bash
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+1.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ echo "Hello World"
+Hello World
+
+2.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ mkdir new_dir
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+3.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ rmdir new_dir
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+4.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ cp ./lorem/sed.txt ./lorem-copy
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd ./lorem-copy/
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ ls
+dummy_file.txt  sed.txt
+
+5.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp at.txt lorem.txt ../lorem-copy
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem-copy
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt  sed.txt
+
+6.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+7.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat at.txt lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+8.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ head -n 3 ../lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+9.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ tail -n 3 ../lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+10.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ echo "Homo homini lupus." >> ../lorem-copy/sed.txt
+
+11.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ tail -n 3 ../lorem-copy/sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+12.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -i 's/et/ET/g' ./at.txt
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+13.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ whoami
+laiag
+
+14.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/laiag/IH-Labs/lab-bash/lorem
+
+15.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls *.txt
+at.txt  lorem.txt  sed.txt
+
+16.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat sed.txt | wc -l
+9
+
+17.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ find . -type f -name 'lorem*' | wc -l
+1
+
+20.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ read -p "Enter your name: " my_name
+Enter your name: Laia
+
+21.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ echo "your name is: $my_name"
+your name is: Laia
+
+22.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ mkdir "$my_name"
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls
+Laia/  at.txt  at.txte  lorem.txt  sed.txt
+
+23.
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ rmdir "$my_name"
+
+
+laiag@LAPTOP-7FLMRPTN MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+
+
+
+
+
+
+
+
+
+
+
